@@ -1,4 +1,4 @@
-name: test_and_learn
+name: merchandisemanage_by_flutter
 description: "A new Flutter project."
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
@@ -34,12 +34,6 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.8
-  flutter_secure_storage: ^9.2.4
-  http: ^1.5.0
-  dob_input_field: ^2.0.0
-  date_field: ^6.0.0
-  radio_group_v2: ^3.3.1
-  google_fonts: ^6.3.2
 
 dev_dependencies:
   flutter_test:
