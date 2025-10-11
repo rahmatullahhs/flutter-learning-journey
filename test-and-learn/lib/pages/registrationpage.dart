@@ -1,4 +1,6 @@
 import 'dart:io';
+import 'package:code/page/loginpage.dart';
+import 'package:code/service/authservice.dart';
 import 'package:date_field/date_field.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
@@ -7,9 +9,6 @@ import 'package:image_picker/image_picker.dart';
 import 'package:image_picker_web/image_picker_web.dart';
 import 'package:radio_group_v2/radio_group_v2.dart';
 import 'package:radio_group_v2/radio_group_v2.dart' as v2;
-import 'package:test_and_learn/pages/loginpage.dart';
-
-import 'package:test_and_learn/service/authservice.dart';
 
 class Registration extends StatefulWidget {
   const Registration({super.key});
@@ -232,7 +231,7 @@ class _RegistrationState extends State<Registration> {
                   onPressed: () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) =>Loginpage()),
+                      MaterialPageRoute(builder: (context) => LoginPage()),
                     );
                   },
                   child: Text(
@@ -439,7 +438,7 @@ class _RegistrationState extends State<Registration> {
         // Redirect user to Login Page after successful registration
         Navigator.pushReplacement(
           context,
-          MaterialPageRoute(builder: (context) =>Loginpage()),
+          MaterialPageRoute(builder: (context) => LoginPage()),
         );
       } else {
         // Show error message if regi
